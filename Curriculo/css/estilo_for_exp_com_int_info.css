@@ -1,0 +1,16 @@
+#texto{
+    text-align: justify;
+    float:left;
+    margin: 0px 50px 50px 50px;
+    width:1100px;
+}
+
+#lista li{
+  list-style:none;
+}
+
+#lista li a{
+  font-size: 20px;
+  font-style: italic;
+  color: #00f;
+}

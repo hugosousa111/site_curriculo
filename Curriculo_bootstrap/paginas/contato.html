@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilo_geral_paginas.css">
+    <link rel="stylesheet" href="../css/estilo_contato.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div>
+      <img id = "capa" src="../imagens/capa.jpg" class="img-responsive">
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-right">
+          <li><a href="index.html">Inicial</a></li>
+          <li><a href="formacao_academica.html">Formação Acadêmica</a></li>
+          <li><a href="experiencia.html">Experiência Profissional</a></li>
+          <li><a href="competencias.html">Competências</a></li>
+          <li><a href="interesses.html">Interesses</a></li>
+          <li><a href="informacoes_adicionais.html">Informações Adicionais</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+
+            <article id="formulario_art"> <!-- artigo -->
+                <header> <!-- cabeçalho -->
+                    <hgroup>
+                        <h1>Enviar Mensagem</h1>
+                    </hgroup>
+                </header> <!-- fim cabecalho -->
+                <form id = "formu" action="index.html" method="post" onsubmit="return verifica_campos();">
+                    <label for="name">Nome:</label><br></br>
+                    <input type="text" name="name" value="" id="name">
+                    <br></br>
+                    <label for="email">E-mail:</label><br></br>
+                    <input type="text" name="email" onblur="validar_email(formu.email);" value="" id="email">
+                    <br></br>
+                    <label for="mensagem">Mensagem:</label><br></br>
+                    <textarea type="input" name="mensagem" value="" id="mensagem"></textarea>
+                    <br></br>
+                    <input type="submit" name="btt_enviar" value="Enviar">
+                    <input type="reset" name="btt_limpar" value="Limpar">
+                </form>
+
+            </article> <!-- fim artigo -->
+          </div>
+   </div>
+
+
+                <footer> <!-- rodapé -->
+                    Tecnologias Web - Engenharia de computação - UFC - Campus Sobral
+                    <p><small id="mudarcor">&copy; Todos os direitos reservados.</small></p>
+                    <address>
+                        E-mail: <a id="mudarcor" href="mailto:hugosousa111@gmail.com">hugosousa111@gmail.com</a>
+                        Fone: <a id="mudarcor" href="tel:88997064780">(88) 9-9706-4780</a><br>
+                        E-mail: <a id="mudarcor" href="mailto:fariaaskamila@gmail.com">fariaas.kamila@gmail.com</a>
+                        Fone: <a id="mudarcor" 2href="tel:88994659703">(88) 9-9465-9703</a>
+                    </address>
+                </footer> <!-- fim rodapé -->
+                <script src="../js/jquery-3.2.1.slim.min.js"></script>
+                <script src="../js/popper.min.js"></script>
+                <script src="../js/bootstrap.min.js"></script>
+                <script type="text/javascript" src = "../js/funcoes.js">
+
+                </script>
+              </body>
+            </html>

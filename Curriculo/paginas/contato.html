@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato</title>
+        <script type="text/javascript" src="../js/funcoes.js"></script>
+		    <link rel="stylesheet" href="../css/estilo_geral_paginas.css">
+        <link rel="stylesheet" href="../css/estilo_contato.css">
+    </head>
+
+    <body>
+        <main>
+            <header id = "cabecalho">
+                <img src="../imagens/capa.jpg">
+            </header> <!-- fim cabeçalho -->
+
+            <nav> <!-- navegação -->
+                <ul>
+                  <li><a href="index.html">Inicial</a></li>
+                  <li><a href="formacao_academica.html">Formação Acadêmica</a></li>
+                  <li><a href="experiencia.html">Experiência Profissional</a></li>
+                  <li><a href="competencias.html">Competências</a></li>
+                  <li><a href="interesses.html">Interesses</a></li>
+                  <li><a href="informacoes_adicionais.html">Informações Adicionais</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav> <!-- fim navegação -->
+
+            <article id="formulario_art"> <!-- artigo -->
+                <header> <!-- cabeçalho -->
+                    <hgroup>
+                        <h1>Enviar Mensagem</h1>
+                    </hgroup>
+                </header> <!-- fim cabecalho -->
+                <form id = "formu" action="index.html" method="post" onsubmit="return verifica_campos();">
+                    <label for="name">Nome:</label><br></br>
+                    <input type="text" name="name" value="" id="name">
+                    <br></br>
+                    <label for="email">E-mail:</label><br></br>
+                    <input type="text" name="email" onblur="validar_email(formu.email);" value="" id="email">
+                    <br></br>
+                    <label for="mensagem">Mensagem:</label><br></br>
+                    <textarea type="input" name="mensagem" value="" id="mensagem"></textarea>
+                    <br></br>
+                    <input type="submit" name="btt_enviar" value="Enviar">
+                    <input type="reset" name="btt_limpar" value="Limpar">
+                </form>
+
+            </article> <!-- fim artigo -->
+
+            <footer> <!-- rodapé -->
+                Tecnologias Web - Engenharia de computação - UFC - Campus Sobral
+                <p><small id="mudarcor">&copy; Todos os direitos reservados.</small></p>
+                <address>
+                    E-mail: <a id="mudarcor" href="mailto:hugosousa111@gmail.com">hugosousa111@gmail.com</a>
+                    Fone: <a id="mudarcor" href="tel:88997064780">(88) 9-9706-4780</a>
+                </address>
+            </footer> <!-- fim rodapé -->
+
+        </main> <!-- fim principal -->
+    </body>
+
+</html>

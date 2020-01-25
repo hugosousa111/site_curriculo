@@ -1,0 +1,10 @@
+#text_sobre {
+    text-align: justify;
+    float:right;
+    margin: 25px 50px 50px 50px;
+    width:auto;
+}
+#foto {
+      margin:25px 0px 0px 0px;
+      width: 350px;
+}
